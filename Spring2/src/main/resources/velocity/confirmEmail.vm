@@ -1,0 +1,47 @@
+﻿<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+<style>
+div {
+    margin-left: 40px;
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+.foot {
+font-size: 10px;
+
+}s
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>WITAMY</h1>
+
+
+<div>Została rozpoczęta procedura rejestracji nowego użytkownika na
+Portalu <a href="http://onet.pl"> www.onet.pl</a>.<br> Aby aktywować
+konto prosimy o wciśnięcie odnośnika poniżej: </div><br>
+<div> <a href="${url}"> ODNOŚNIK AKTYWACYJNY KONTA</a></div><br>
+<div>Twój Login: ${login}</div><br>
+
+<div> Dziękujemy <br> Zespół XYZ</div><br><br>
+
+<div class="foot">Powered by KM <br><br> XYZ | Przemysłowa | 53-520
+Wrocław | POLSKA | Tel: +48 (0)365 70 72 | Info@XYZ.pl</div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
