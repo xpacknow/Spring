@@ -117,10 +117,7 @@ public class ProductController {
 	
 	@RequestMapping(value = "/product")
 	public String getProductById(Model model, @RequestParam("id") String productId) {
-		
-//		, 
-//			Product product = );
-//			model.addAttribute("bombel", product);
+
 		model.addAttribute("products", productService.getProductById(Long.parseLong(productId)));
 		
 		return "product";
