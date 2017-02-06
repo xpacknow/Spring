@@ -109,7 +109,22 @@ public class ProductController {
 		return "productsAll";
 	}
 	
+	@RequestMapping(value = "/productss")
+	public String list(Model model) {
+		model.addAttribute("products", productService.getAllProducts());
+		return "products";
+	}
 	
+	@RequestMapping(value = "/product")
+	public String getProductById(Model model, @RequestParam("id") String productId) {
+		
+//		, 
+//			Product product = );
+//			model.addAttribute("bombel", product);
+		model.addAttribute("products", productService.getProductById(Long.parseLong(productId)));
+		
+		return "product";
+	}
 	
 	
 }

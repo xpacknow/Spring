@@ -50,6 +50,22 @@ public class Product {
 	
 	@Transient
 	private MultipartFile zdjecie;
+	
+	
+	
+	
+	public Product() {
+		super();
+}
+
+	public Product(long idProdukty, String nazwa, BigDecimal cenaZaSztuke) {
+		this.idProdukty = idProdukty;
+		this.nazwa = nazwa;
+		this.cenaZaSztuke = cenaZaSztuke;
+	}
+
+	
+	
 
 	public MultipartFile getZdjecie() {
 		return zdjecie;
