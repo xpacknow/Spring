@@ -10,7 +10,7 @@ public interface ClientRepository {
 
 	List<Client> getAllClient();
 
-	Client getClientById(String clientID);
+	Client getClientById(int clientID);
 
 	void addClient(Client client);
 	

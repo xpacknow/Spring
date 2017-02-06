@@ -74,6 +74,16 @@ public class Client {
 	
 	
 	
+	public Client() {}
+	
+
+	public Client(int idKlient, String login, String haslo) {
+		super();
+		this.idKlient = idKlient;
+		this.login = login;
+		this.haslo = haslo;
+	}
+
 
 	public Role getRole() {
 		return role;

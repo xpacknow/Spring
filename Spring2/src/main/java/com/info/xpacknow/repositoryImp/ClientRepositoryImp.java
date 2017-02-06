@@ -39,7 +39,7 @@ public class ClientRepositoryImp implements ClientRepository {
 
 	@Override
 	@Transactional(readOnly=false)
-	public Client getClientById(String clientId) {
+	public Client getClientById(int clientId) {
 		return en.find(Client.class, clientId);
 	}
 
